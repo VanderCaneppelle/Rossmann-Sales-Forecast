@@ -7,7 +7,7 @@ import pandas as pd
 
 class Rossmann( object ):
     def __init__( self ):
-        self.home_path = '/Users/vande/Repos/ds-em-producao/'
+        self.home_path = '/home/vander/repos/ds-em-producao/'
         self.competition_time_month_scaler = pickle.load(open (self.home_path + 'parameter/competition_time_month_scaler', 'rb') )
         self.competition_distance_scaler =   pickle.load(open (self.home_path + 'parameter/competition_distance_scaler', 'rb') )
         self.promo_time_week_scaler =        pickle.load(open (self.home_path + 'parameter/promo_time_week_scaler', 'rb') )

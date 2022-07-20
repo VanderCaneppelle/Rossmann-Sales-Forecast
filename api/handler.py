@@ -4,7 +4,7 @@ import pandas as pd
 from rossmann.Rossmann import Rossmann
 
 #loading model
-model = pickle.load( open(r'C:/Users/vande/Repos/ds-em-producao/model/model_rossmann.pkl','rb') )
+model = pickle.load( open('/home/vander/repos/ds-em-producao/model/model_rossmann.pkl','rb') )
 
 
 # initialize API
@@ -42,4 +42,4 @@ def rossmann_predict():
 
 
 if __name__ == '__main__':
-    app.run( '192.168.100.12', debug =True )
+    app.run( '0.0.0.0', debug =True )
